@@ -1,0 +1,123 @@
+* { box-sizing: border-box; }
+body {
+    font-family: "Courier New", Courier, monospace;
+    background: #f2f2f2;
+    margin: 0;
+    padding: 20px;
+    color: #111;
+}
+.container {
+    max-width: 950px;
+    margin: 0 auto;
+    background: #fff;
+    border: 3px solid #111;
+    padding: 20px 25px;
+    box-shadow: 8px 8px 0 #111;
+}
+h1 { font-size: 20px; margin: 0 0 2px 0; text-transform: uppercase; }
+h2 { font-size: 15px; margin: 0 0 15px 0; font-weight: normal; }
+.programmer { font-size: 12px; margin-bottom: 15px; }
+
+nav.menu {
+    margin: 12px 0 20px 0;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #111;
+}
+nav.menu a {
+    display: inline-block;
+    margin-right: 18px;
+    padding: 6px 14px;
+    text-decoration: none;
+    color: #111;
+    border: 2px solid #111;
+    font-weight: bold;
+    font-size: 13px;
+}
+nav.menu a.active { background: #ffe14d; }
+nav.menu a:hover { background: #111; color: #fff; }
+
+fieldset {
+    border: 2px solid #111;
+    margin-bottom: 20px;
+    padding: 15px;
+}
+legend { font-weight: bold; padding: 0 8px; }
+
+.form-row { margin-bottom: 10px; display: flex; align-items: center; }
+.form-row label { width: 190px; font-size: 13px; }
+.form-row input[type=text],
+.form-row input[type=date],
+.form-row input[type=number],
+.form-row select {
+    flex: 1;
+    max-width: 320px;
+    padding: 6px 8px;
+    border: 2px solid #111;
+    font-family: inherit;
+    font-size: 13px;
+    background: #fff;
+}
+.form-row .checks label { width: auto; margin-right: 15px; font-size: 13px; }
+.readonly-box {
+    background: #f2f2f2;
+    padding: 6px 8px;
+    border: 2px dashed #999;
+    font-size: 13px;
+    flex: 1;
+    max-width: 320px;
+}
+
+button, .btn {
+    background: #111;
+    color: #fff;
+    border: 2px solid #111;
+    padding: 8px 18px;
+    font-weight: bold;
+    font-size: 13px;
+    cursor: pointer;
+    font-family: inherit;
+}
+button:hover, .btn:hover { background: #ffe14d; color: #111; }
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    font-size: 13px;
+}
+th, td {
+    border: 2px solid #111;
+    padding: 7px 8px;
+    text-align: left;
+}
+th { background: #ffe14d; text-transform: uppercase; font-size: 12px; }
+tr:nth-child(even) td { background: #fafafa; }
+
+.action a { margin-right: 8px; font-size: 12px; text-decoration: none; font-weight: bold; }
+.action a.edit { color: #0057b7; }
+.action a.hapus { color: #c1121f; }
+
+.badge { padding: 2px 8px; border: 2px solid #111; font-size: 11px; font-weight: bold; }
+.badge.ok, .badge.lengkap, .badge.diterima { background: #b6f2a1; }
+.badge.tidak, .badge.ditolak, .badge.pelanggan, .badge.belumlengkap { background: #f2a1a1; }
+
+.alert {
+    padding: 10px 14px;
+    border: 2px solid #111;
+    background: #ffe14d;
+    margin-bottom: 15px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.pendapatan-box {
+    margin-top: 20px;
+    padding: 14px;
+    border: 3px solid #111;
+    background: #b6f2a1;
+    font-size: 16px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+small.hint { display:block; color:#555; font-size: 11px; margin-top: 3px; }
